@@ -15,7 +15,7 @@ export const mockData = {
       role: 'Software Engineer',
       company: 'ExpertsCloud',
       duration: '05/2025 - Present',
-      location: 'Remote',
+      location: 'Bahria Town',
       achievements: [
         'Architected and deployed scalable cloud-based applications using AWS services including EC2, S3, Lambda, DynamoDB, Cognito, IAM, Elastic IP, and Application Load Balancer',
         'Developed advanced AI-powered chatbot systems leveraging AWS Bedrock for Agentic AI implementations, integrating RAG pipelines for intelligent document processing',
@@ -29,7 +29,7 @@ export const mockData = {
       role: 'Software Engineer',
       company: 'Future Dev Solutions',
       duration: '10/2022 - 04/2025',
-      location: 'Remote',
+      location: 'Johar Town',
       achievements: [
         'Developed and maintained web applications using the MERN stack and Next.js, implementing SSR for enhanced performance and SEO',
         'Led full SDLC activities, covering design, coding, testing, and deployment of diverse web applications',
