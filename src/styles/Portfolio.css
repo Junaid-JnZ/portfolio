@@ -1,0 +1,46 @@
+.portfolio {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+}
+
+.portfolio-main {
+  width: 100%;
+}
+
+/* Section Container */
+.section-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 120px 48px;
+}
+
+.section-label {
+  font-family: 'Courier New', monospace;
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--primary-color);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  display: inline-block;
+}
+
+.section-title {
+  font-size: clamp(36px, 6vw, 72px);
+  font-weight: 400;
+  color: var(--text-primary);
+  line-height: 1.2;
+  margin-bottom: 64px;
+}
+
+@media (max-width: 768px) {
+  .section-container {
+    padding: 80px 24px;
+  }
+  
+  .section-title {
+    margin-bottom: 48px;
+  }
+}
+
