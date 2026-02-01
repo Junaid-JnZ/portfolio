@@ -13,10 +13,25 @@
   background: var(--bg-tertiary);
   border: 1px solid var(--border-color);
   overflow: hidden;
-  transition: all 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 0;
   transform: translateY(20px);
   animation: fadeInUp 0.6s ease forwards;
+  position: relative;
+}
+
+.project-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 2px solid var(--primary-color);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+  pointer-events: none;
 }
 
 .project-card:nth-child(1) {
@@ -45,8 +60,22 @@
 
 .project-card:hover {
   border-color: var(--border-hover);
-  transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  transform: translateY(-12px) scale(1.02);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5), 0 0 30px rgba(56, 255, 98, 0.2);
+}
+
+.project-card:hover::before {
+  opacity: 0.3;
+  animation: borderGlow 2s ease-in-out infinite;
+}
+
+@keyframes borderGlow {
+  0%, 100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.6;
+  }
 }
 
 .project-image-container {
@@ -154,12 +183,22 @@
   font-size: 12px;
   transition: all 0.3s ease;
   font-family: 'Courier New', monospace;
+  position: relative;
+  overflow: hidden;
+}
+
+.tech-badge::before {
+  content: '#';
+  margin-right: 4px;
+  opacity: 0.5;
 }
 
 .tech-badge:hover {
   background: rgba(56, 255, 98, 0.2);
   border-color: var(--primary-color);
   color: var(--primary-color);
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 4px 12px rgba(56, 255, 98, 0.3);
 }
 
 @keyframes fadeInUp {

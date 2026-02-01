@@ -26,6 +26,15 @@ const Hero = ({ data }) => {
 
   return (
     <section className="hero" id="hero">
+      <div className="floating-particles">
+        {[...Array(20)].map((_, i) => (
+          <div key={i} className="particle" style={{
+            left: `${Math.random() * 100}%`,
+            animationDelay: `${Math.random() * 5}s`,
+            animationDuration: `${10 + Math.random() * 10}s`
+          }}></div>
+        ))}
+      </div>
       <div className="hero-container">
         <div className="hero-content" ref={titleRef}>
           <div className="hero-label">SOFTWARE ENGINEER</div>

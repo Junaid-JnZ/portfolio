@@ -33,11 +33,39 @@
   cursor: pointer;
   transition: all 0.3s ease;
   letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+}
+
+.header-logo::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--primary-color);
+  transition: width 0.3s ease;
+  box-shadow: 0 0 10px var(--primary-color);
 }
 
 .header-logo:hover {
   transform: scale(1.1);
   text-shadow: 0 0 20px rgba(56, 255, 98, 0.5);
+  animation: logoPulse 1.5s ease-in-out infinite;
+}
+
+.header-logo:hover::after {
+  width: 100%;
+}
+
+@keyframes logoPulse {
+  0%, 100% {
+    text-shadow: 0 0 20px rgba(56, 255, 98, 0.5);
+  }
+  50% {
+    text-shadow: 0 0 30px rgba(56, 255, 98, 0.8), 0 0 40px rgba(56, 255, 98, 0.4);
+  }
 }
 
 .header-nav {

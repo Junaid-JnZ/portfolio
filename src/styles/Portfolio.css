@@ -24,6 +24,30 @@
   text-transform: uppercase;
   margin-bottom: 24px;
   display: inline-block;
+  position: relative;
+  padding-left: 20px;
+}
+
+.section-label::before {
+  content: '[';
+  position: absolute;
+  left: 0;
+  animation: bracketBlink 2s infinite;
+}
+
+.section-label::after {
+  content: ']';
+  margin-left: 4px;
+  animation: bracketBlink 2s infinite 0.1s;
+}
+
+@keyframes bracketBlink {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0.3;
+  }
 }
 
 .section-title {

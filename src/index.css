@@ -29,6 +29,16 @@ body {
   background-color: var(--bg-primary);
   color: var(--text-primary);
   overflow-x: hidden;
+  cursor: default;
+}
+
+/* Custom Cursor Effect */
+body {
+  cursor: url("data:image/svg+xml,%3Csvg width='24' height='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3 3 L3 13 L8 11 L10 18 L13 17 L11 10 L16 8 Z' fill='%2338FF62' stroke='%230a0a0a' stroke-width='0.5'/%3E%3C/svg%3E") 4 4, auto;
+}
+
+a, button, .nav-link, .btn-primary, .btn-ghost, .project-link, .footer-link {
+  cursor: url("data:image/svg+xml,%3Csvg width='24' height='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3 3 L3 13 L8 11 L10 18 L13 17 L11 10 L16 8 Z' fill='%2338FF62' stroke='%230a0a0a' stroke-width='0.5'/%3E%3C/svg%3E") 4 4, pointer;
 }
 
 code {
