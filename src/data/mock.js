@@ -54,35 +54,11 @@ export const mockData = {
 
   projects: [
     {
-      name: 'ReganByte',
-      period: '05/2025 - Present',
-      description: 'Built scalable multi-tenant chatbot enabling intelligent Q&A from document knowledge bases. Automated document ingestion pipeline processing PDFs, CSVs, and web content with vector embeddings. Delivered context-aware AI responses using RAG and semantic search capabilities.',
-      technologies: ['AWS Bedrock', 'RAG', 'Next.js', 'Supabase', 'Serverless'],
-      image: 'https://images.unsplash.com/photo-1763718432504-7716caff6e99',
-      link: ''
-    },
-    {
-      name: 'Convo-Note',
-      period: '05/2025 - 11/2025',
-      description: 'Full-stack healthcare application using AI to transcribe patient-provider conversations and generate structured medical notes (SOAP format). Features real-time audio transcription, AI-powered note generation, vector embeddings, HIPAA-compliant data handling, and subscription billing.',
-      technologies: ['React', 'TypeScript', 'AdonisJS', 'MySQL', 'OpenAI Whisper', 'LangChain', 'AWS S3'],
-      image: 'https://images.pexels.com/photos/7617612/pexels-photo-7617612.jpeg',
-      link: 'https://convo-notes.theexpertscloud.com'
-    },
-    {
-      name: 'Founder Dataroom',
-      period: '06/2025 - 12/2025',
-      description: 'A secure, multi-tenant document management and sharing platform for founders and companies. Features secure file uploads, Google Drive/OneDrive integration, automated document processing, role-based access control, and subscription management with Stripe.',
-      technologies: ['React', 'Material-UI', 'Python', 'AWS Lambda', 'DynamoDB', 'S3', 'Stripe'],
-      image: 'https://images.unsplash.com/photo-1763718528755-4bca23f82ac3',
-      link: 'https://foundersdataroom.com'
-    },
-    {
       name: 'LenzIQ',
       period: '05/2025 - Present',
       description: 'Full-stack IoT camera management platform for remote monitoring of Axis cameras across distributed sites. Features real-time event detection, video recording, alert management, WebRTC streaming, and router telemetry monitoring supporting 2000+ camera units.',
       technologies: ['Django REST', 'React', 'PostgreSQL', 'AWS S3', 'WebRTC', 'WebSocket', 'IoT'],
-      image: 'https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg',
+      image: '/project-images/LenzIQ.png',
       link: 'https://lenziq-admin-dev.gptglow.com'
     },
     {
@@ -90,7 +66,7 @@ export const mockData = {
       period: '05/2025 - Present',
       description: 'Security assessment and reporting platform combining automated scanning with request/review workflow. Implements automated network scanning, AWS cloud configuration scanning, GitHub repository security scanning, and AI readiness assessment capabilities.',
       technologies: ['FastAPI', 'Python', 'React', 'Vite', 'PostgreSQL', 'AWS S3', 'Docker', 'Cypress'],
-      image: 'https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg',
+      image: '/project-images/PhantomStrike.png',
       link: 'https://www.phantomstrike.io'
     },
     {
@@ -100,6 +76,30 @@ export const mockData = {
       technologies: ['Next.js', 'PostgreSQL', 'React Native', 'Node.js'],
       image: 'https://customer-assets.emergentagent.com/job_cloud-portfolio-29/artifacts/sos8i6os_image.png',
       link: 'https://orbyqrmenu.co.uk'
+    },
+    {
+      name: 'ReganByte',
+      period: '05/2025 - Present',
+      description: 'Built scalable multi-tenant chatbot enabling intelligent Q&A from document knowledge bases. Automated document ingestion pipeline processing PDFs, CSVs, and web content with vector embeddings. Delivered context-aware AI responses using RAG and semantic search capabilities.',
+      technologies: ['AWS Bedrock', 'RAG', 'Next.js', 'Supabase', 'Serverless'],
+      image: '/project-images/ReganByte.png',
+      link: ''
+    },
+    {
+      name: 'Convo-Note',
+      period: '05/2025 - 11/2025',
+      description: 'Full-stack healthcare application using AI to transcribe patient-provider conversations and generate structured medical notes (SOAP format). Features real-time audio transcription, AI-powered note generation, vector embeddings, HIPAA-compliant data handling, and subscription billing.',
+      technologies: ['React', 'TypeScript', 'AdonisJS', 'MySQL', 'OpenAI Whisper', 'LangChain', 'AWS S3'],
+      image: '/project-images/ConvoNote.png',
+      link: 'https://convonote.com/'
+    },
+    {
+      name: 'Founder Dataroom',
+      period: '06/2025 - 12/2025',
+      description: 'A secure, multi-tenant document management and sharing platform for founders and companies. Features secure file uploads, Google Drive/OneDrive integration, automated document processing, role-based access control, and subscription management with Stripe.',
+      technologies: ['React', 'Material-UI', 'Python', 'AWS Lambda', 'DynamoDB', 'S3', 'Stripe'],
+      image: '/project-images/FounderDataRoom.png',
+      link: 'https://foundersdataroom.com'
     }
   ],
 
