@@ -1,5 +1,5 @@
 import React from 'react';
-import { GraduationCap, Award, Calendar } from 'lucide-react';
+import { GraduationCap, Award, Calendar, ExternalLink } from 'lucide-react';
 import '../styles/Education.css';
 
 const Education = ({ data, certifications }) => {
@@ -39,7 +39,20 @@ const Education = ({ data, certifications }) => {
                   <div className="certification-details">
                     <h4 className="certification-name">{cert.name}</h4>
                     <p className="certification-issuer">{cert.issuer}</p>
-                    <span className="certification-date">{cert.date}</span>
+                    <div className="certification-meta">
+                      <span className="certification-date">{cert.date}</span>
+                      {cert.url && (
+                        <a
+                          href={cert.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="certification-credly-link"
+                        >
+                          View on Credly
+                          <ExternalLink size={14} aria-hidden />
+                        </a>
+                      )}
+                    </div>
                   </div>
                 </div>
               ))}

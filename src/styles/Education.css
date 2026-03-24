@@ -155,10 +155,31 @@
   margin-bottom: 8px;
 }
 
+.certification-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 16px;
+}
+
 .certification-date {
   font-size: 12px;
   color: var(--primary-color);
   font-family: 'Courier New', monospace;
+}
+
+.certification-credly-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.certification-credly-link:hover {
+  color: var(--primary-color);
 }
 
 @keyframes slideInLeft {

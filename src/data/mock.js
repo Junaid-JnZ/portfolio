@@ -113,6 +113,12 @@ export const mockData = {
 
   certifications: [
     {
+      name: 'AWS Certified Developer – Associate',
+      issuer: 'Amazon Web Services Training and Certification',
+      date: '02/2026',
+      url: 'https://www.credly.com/badges/7dd24746-6ab0-406d-9a5f-fff81a807435/linked_in_profile'
+    },
+    {
       name: 'Operating System and You: Becoming a Power User',
       issuer: 'Google',
       date: '01/2021'
