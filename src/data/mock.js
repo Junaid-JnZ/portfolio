@@ -90,8 +90,8 @@ export const mockData = {
       period: '05/2025 - 11/2025',
       description: 'Full-stack healthcare application using AI to transcribe patient-provider conversations and generate structured medical notes (SOAP format). Features real-time audio transcription, AI-powered note generation, vector embeddings, HIPAA-compliant data handling, and subscription billing.',
       technologies: ['React', 'TypeScript', 'AdonisJS', 'MySQL', 'OpenAI Whisper', 'LangChain', 'AWS S3'],
-      image: '/project-images/ConvoNote.png',
-      link: 'https://convonote.com/'
+      image: '/project-images/ConvoNote2.png',
+      link: 'https://sagespine.com/'
     },
     {
       name: 'Founder Dataroom',
