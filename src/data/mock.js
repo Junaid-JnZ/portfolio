@@ -59,7 +59,7 @@ export const mockData = {
       description: 'Full-stack IoT camera management platform for remote monitoring of Axis cameras across distributed sites. Features real-time event detection, video recording, alert management, WebRTC streaming, and router telemetry monitoring supporting 2000+ camera units.',
       technologies: ['Django REST', 'React', 'PostgreSQL', 'AWS S3', 'WebRTC', 'WebSocket', 'IoT'],
       image: '/project-images/LenzIQ.png',
-      link: 'https://lenziq-admin-dev.gptglow.com'
+      link: 'https://admin.lenziq.io'
     },
     {
       name: 'Phantomstrike',
