@@ -82,8 +82,8 @@ export const mockData = {
       period: '05/2025 - Present',
       description: 'Built scalable multi-tenant chatbot enabling intelligent Q&A from document knowledge bases. Automated document ingestion pipeline processing PDFs, CSVs, and web content with vector embeddings. Delivered context-aware AI responses using RAG and semantic search capabilities.',
       technologies: ['AWS Bedrock', 'RAG', 'Next.js', 'Supabase', 'Serverless'],
-      image: '/project-images/ReganByte.png',
-      link: ''
+      image: '/project-images/ReganByte2.png',
+      link: 'https://www.reganbyte.com/'
     },
     {
       name: 'Convo-Note',
